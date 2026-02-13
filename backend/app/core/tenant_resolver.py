@@ -100,5 +100,6 @@ class TenantResolver:
             user_id: User ID
             tenant_id: Tenant ID
         """
-        # No-op in this resolver implementation.
-        pass
+        user.raw_app_metadata.set("tenant_id", tenant_id);
+
+        
